@@ -21,7 +21,7 @@ export default function FoodPage() {
           </h1>
 
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-blue-100">
-            Discover Pangasinan's local delicacies, fresh seafood, and
+            Discover Pangasinan&apos;s local delicacies, fresh seafood, and
             unforgettable Filipino dishes.
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function FoodPage() {
 
                 <p className="mt-2 text-gray-600">
                   Enjoy fresh seafood and local dishes prepared with
-                  ingredients from Pangasinan's coastal communities.
+                  ingredients from Pangasinan&apos;s coastal communities.
                 </p>
               </div>
 

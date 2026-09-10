@@ -51,7 +51,7 @@ export default function DiscoverPage() {
               </h2>
 
               <p className="mt-3 leading-relaxed text-gray-600">
-                Learn more about the province's history, heritage, traditions,
+                Learn more about the province&apos;s history, heritage, traditions,
                 and local communities.
               </p>
             </div>
