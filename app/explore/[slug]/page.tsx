@@ -13,7 +13,7 @@ const destinations: Record<string, Destination> = {
     location: "Alaminos City, Pangasinan",
     description:
       "Discover the beautiful islands, clear waters, and unforgettable island adventures of Hundred Islands.",
-    image: "/images/hundred-Islands.jpg",
+    image: "/images/hundred-islands.jpg",
   },
 
   "bolinao-falls": {
@@ -72,6 +72,10 @@ const destinations: Record<string, Destination> = {
     image: "/images/Tambobong Beach.jpg",
   },
 };
+
+export function generateStaticParams() {
+  return Object.keys(destinations).map((slug) => ({ slug }));
+}
 
 export default async function DestinationPage({
   params,

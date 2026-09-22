@@ -4,7 +4,7 @@ const destinations = [
   {
     title: "Hundred Islands",
     location: "Alaminos City, Pangasinan",
-    image: "/images/hundred-Islands.jpg",
+    image: "/images/hundred-islands.jpg",
     slug: "hundred-islands",
   },
   {
