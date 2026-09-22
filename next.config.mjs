@@ -1,4 +1,5 @@
 const isProd = process.env.NODE_ENV === 'production';
+const basePath = isProd ? '/Pangasinan-Tourism' : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -7,9 +8,12 @@ const nextConfig = {
     unoptimized: true,
   },
   ...(isProd && {
-    basePath: '/Pangasinan-Tourism',
-    assetPrefix: '/Pangasinan-Tourism',
+    basePath,
+    assetPrefix: basePath,
   }),
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 export default nextConfig;

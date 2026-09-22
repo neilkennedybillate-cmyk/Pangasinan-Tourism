@@ -1,52 +1,54 @@
 import DestinationCard from "../molecules/DestinationCard";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 const destinations = [
   {
     title: "Hundred Islands",
     location: "Alaminos City, Pangasinan",
-    image: "/images/hundred-islands.jpg",
+    image: `${BASE}/images/hundred-islands.jpg`,
     slug: "hundred-islands",
   },
   {
     title: "Bolinao Falls",
     location: "Bolinao, Pangasinan",
-    image: "/images/Bolinao-Falls.jpg",
+    image: `${BASE}/images/Bolinao-Falls.jpg`,
     slug: "bolinao-falls",
   },
   {
     title: "Bolinao Lighthouse",
     location: "Bolinao, Pangasinan",
-    image: "/images/Bolinao-Lighthouse.jpg",
+    image: `${BASE}/images/Bolinao-Lighthouse.jpg`,
     slug: "bolinao-lighthouse",
   },
   {
     title: "Enchanted Cave",
     location: "Bolinao, Pangasinan",
-    image: "/images/enchanted-cave.jpg",
+    image: `${BASE}/images/enchanted-cave.jpg`,
     slug: "enchanted-cave",
   },
   {
     title: "Anda Pangasinan",
     location: "Anda, Pangasinan",
-    image: "/images/Anda-Pangasinan-Philippines.jpg",
+    image: `${BASE}/images/Anda-Pangasinan-Philippines.jpg`,
     slug: "anda-pangasinan",
   },
   {
     title: "Saint James the Great Parish Church",
     location: "Bolinao, Pangasinan",
-    image: "/images/saint-james-church.jpg",
+    image: `${BASE}/images/saint-james-church.jpg`,
     slug: "saint-james-church",
   },
   {
     title: "Salt Farm",
     location: "Bani, Pangasinan",
-    image: "/images/Salt-farm-Bani-Pangasinan.jpg",
+    image: `${BASE}/images/Salt-farm-Bani-Pangasinan.jpg`,
     slug: "salt-farm",
   },
   {
     title: "Tambobong Beach",
     location: "Dasol, Pangasinan",
-    image: "/images/Tambobong Beach.jpg",
+    image: `${BASE}/images/Tambobong Beach.jpg`,
     slug: "tambobong-beach",
   },
 ];

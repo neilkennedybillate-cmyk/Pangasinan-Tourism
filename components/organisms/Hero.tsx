@@ -9,7 +9,7 @@ export default function Hero() {
     >
       {/* Background Image */}
       <img
-        src="/images/hundred-islands.jpg"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/hundred-islands.jpg`}
         alt="Hundred Islands, Pangasinan"
         className="absolute inset-0 h-full w-full object-cover"
       />

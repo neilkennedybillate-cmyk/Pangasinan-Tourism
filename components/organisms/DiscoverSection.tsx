@@ -34,7 +34,7 @@ export default function DiscoverSection() {
         {/* Image */}
         <div className="overflow-hidden rounded-2xl shadow-xl">
           <img
-            src="/images/Anda-Pangasinan-Philippines.jpg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/Anda-Pangasinan-Philippines.jpg`}
             alt="Beautiful destination in Pangasinan"
             className="h-80 w-full object-cover"
           />

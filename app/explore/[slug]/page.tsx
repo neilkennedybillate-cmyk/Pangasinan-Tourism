@@ -7,13 +7,15 @@ type Destination = {
   image: string;
 };
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 const destinations: Record<string, Destination> = {
   "hundred-islands": {
     title: "Hundred Islands",
     location: "Alaminos City, Pangasinan",
     description:
       "Discover the beautiful islands, clear waters, and unforgettable island adventures of Hundred Islands.",
-    image: "/images/hundred-islands.jpg",
+    image: `${BASE}/images/hundred-islands.jpg`,
   },
 
   "bolinao-falls": {
@@ -21,7 +23,7 @@ const destinations: Record<string, Destination> = {
     location: "Bolinao, Pangasinan",
     description:
       "Enjoy the refreshing waterfalls and natural beauty of Bolinao Falls.",
-    image: "/images/Bolinao-Falls.jpg",
+    image: `${BASE}/images/Bolinao-Falls.jpg`,
   },
 
   "bolinao-lighthouse": {
@@ -29,7 +31,7 @@ const destinations: Record<string, Destination> = {
     location: "Bolinao, Pangasinan",
     description:
       "Visit the historic Bolinao Lighthouse and enjoy its beautiful coastal surroundings.",
-    image: "/images/Bolinao-Lighthouse.jpg",
+    image: `${BASE}/images/Bolinao-Lighthouse.jpg`,
   },
 
   "enchanted-cave": {
@@ -37,7 +39,7 @@ const destinations: Record<string, Destination> = {
     location: "Bolinao, Pangasinan",
     description:
       "Explore the unique natural beauty and refreshing waters of Enchanted Cave.",
-    image: "/images/enchanted-cave.jpg",
+    image: `${BASE}/images/enchanted-cave.jpg`,
   },
 
   "anda-pangasinan": {
@@ -45,7 +47,7 @@ const destinations: Record<string, Destination> = {
     location: "Anda, Pangasinan",
     description:
       "Experience the peaceful beaches and beautiful coastal scenery of Anda, Pangasinan.",
-    image: "/images/Anda-Pangasinan-Philippines.jpg",
+    image: `${BASE}/images/Anda-Pangasinan-Philippines.jpg`,
   },
 
   "saint-james-church": {
@@ -53,7 +55,7 @@ const destinations: Record<string, Destination> = {
     location: "Bolinao, Pangasinan",
     description:
       "Discover the historical and cultural significance of Saint James the Great Parish Church.",
-    image: "/images/saint-james-church.jpg",
+    image: `${BASE}/images/saint-james-church.jpg`,
   },
 
   "salt-farm": {
@@ -61,7 +63,7 @@ const destinations: Record<string, Destination> = {
     location: "Bani, Pangasinan",
     description:
       "Learn about the traditional salt-making practices and beautiful salt farms of Pangasinan.",
-    image: "/images/Salt-farm-Bani-Pangasinan.jpg",
+    image: `${BASE}/images/Salt-farm-Bani-Pangasinan.jpg`,
   },
 
   "tambobong-beach": {
@@ -69,7 +71,7 @@ const destinations: Record<string, Destination> = {
     location: "Dasol, Pangasinan",
     description:
       "Relax and enjoy the beautiful shoreline and peaceful waters of Tambobong Beach.",
-    image: "/images/Tambobong Beach.jpg",
+    image: `${BASE}/images/Tambobong Beach.jpg`,
   },
 };
 
